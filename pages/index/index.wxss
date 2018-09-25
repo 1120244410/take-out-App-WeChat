@@ -1,0 +1,209 @@
+.icon-location:before{
+  content: '\e607';
+  color:#fff;
+}
+.icon-sousuo:before{
+  content: '\e651';
+  color:#fff;
+}
+.head{
+	width: 100%;
+	height: 90rpx;
+	background-color: #ec472b;
+	padding:0 24rpx;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+}
+.head>.h-l{
+    height:100%;
+    display: flex;
+    align-items: center;
+}
+.head>.h-l navigator{
+  color:#fff;
+  font-size:28rpx;
+}
+.head>.h-l image{
+	width:34rpx;
+  height:34rpx;
+  margin-left: 10rpx;
+}
+.head>.h-r{
+	height:100%;
+  display: flex;
+  align-items: center;
+}
+.head input{
+    width:320rpx;
+    height:46rpx;
+    border-radius: 23rpx;
+    padding:4rpx 8rpx;
+    font-size: 22rpx;
+    background: #fff;
+    margin-right: 10rpx;
+}
+
+.banner{
+  width:100%;
+	height:207rpx;
+  margin-top: 90rpx;
+}
+.banner image{
+    width:750rpx;
+    height:207rpx;
+}
+.fenlei{
+	width:100%;
+	height:360rpx;
+	border-bottom: 1rpx solid rgba(0,0,0,0.2);
+  padding-top: 20rpx;
+}
+.fenlei .li{
+	width:20%;
+	height:48%;
+	float:left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around
+}
+.fenlei .li navigator{
+  width:100rpx;
+	height:100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fenlei .li image{
+  /* margin:10rpx 0; */
+	width:100%;
+	height:100%;
+}
+.fenlei .mingchen{
+	width:100%;
+	height:30rpx;
+	font-size: 30rpx;
+  color:#333;
+	text-align: center;
+}
+
+.youxuan{
+	width:100%;
+	height:auto;
+	padding: 0 24rpx;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+  box-sizing: border-box;
+}
+.youxuan .title-cover{
+	width:100%;
+	min-height:95rpx;
+	display:flex;
+	justify-content:space-between;
+  align-items: center;
+}
+.youxuan .title-cover .title{
+  font-size: 30rpx;
+}
+.youxuan .title-cover .title image{
+  margin-left: 20rpx;
+	width: 44rpx;
+	height:12rpx;
+}
+.youxuan .title-cover navigator{
+  color:rgba(0, 0, 0, 0.4)
+}
+.youxuan .list-content{
+	width:100%;
+	min-height:456rpx;
+	background-color: white;
+	display:flex;
+  flex-wrap: wrap;
+	justify-content: space-around;
+}
+.youxuan .list-content .product-list{
+  width:286rpx;
+	height:371rpx;
+	padding:0 30rpx 30rpx;
+	position: relative;
+}
+.youxuan .list-content .product-list .price{
+	width:80rpx;
+	height:80rpx;
+	font-size: 30rpx;
+	color:white;
+	text-align:center;
+	line-height: 80rpx;
+	border-radius: 30rpx;
+	box-shadow: 0 4rpx 4rpx rgba(0,0,0,0.2);
+	position: absolute;
+	top:20rpx;
+	left:0;
+	background-color: #ec472b;
+}
+.youxuan .list-content .product-list .detail{
+  width:286rpx;
+	height:371rpx;
+	background-color: white;
+	box-shadow: 0 4rpx 4rpx rgba(0,0,0,0.2);
+	border-radius: 30rpx;
+	overflow: hidden;
+}
+.youxuan .list-content .product-list .detail .pthumb{
+  width:100%;
+	height:286rpx;
+}
+.youxuan .list-content .product-list .detail .pthumb image{
+  width:100%;
+	height:286rpx;
+}
+.youxuan .list-content .product-list .detail .detail-bottom{
+  width:100%;
+	height:85rpx;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.youxuan .list-content .product-list .detail .detail-bottom>navigator{
+  width:57rpx;
+	height:57rpx;
+	border-radius: 50rpx;
+	overflow: hidden;
+	margin-right: 10rpx;
+}
+.youxuan .list-content .product-list .detail .detail-bottom>navigator image{
+  width:100%;
+  height:100%;
+}
+.other-info{
+  display: flex;
+	flex-direction: column;
+	width:160rpx;
+	height:57rpx;
+	align-items: center;
+}
+.other-info .collection{
+	font-size: 24rpx;
+	color:#333;
+}
+.youxuan .huan{
+  width:100%;
+  height:54rpx;
+	font-size:26rpx;
+	text-align: center;
+	color:rgba(0,0,0,0.6);
+}
+.up-fresh{
+  width:100%;
+	height:80rpx;
+	font-size: 24rpx;
+	color: rgba(0,0,0,0.4);
+	background-color: white;
+	text-align: center;
+	line-height: 80rpx;
+}

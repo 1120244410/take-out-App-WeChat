@@ -1,0 +1,24 @@
+/**app.wxss**/
+@font-face {
+  font-family: 'iconfont';  /* project id 632709 */
+  src: url('//at.alicdn.com/t/font_632709_fc67vs5m1mj9k9.eot');
+  src: url('//at.alicdn.com/t/font_632709_fc67vs5m1mj9k9.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_632709_fc67vs5m1mj9k9.woff') format('woff'),
+  url('//at.alicdn.com/t/font_632709_fc67vs5m1mj9k9.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_632709_fc67vs5m1mj9k9.svg#iconfont') format('svg');
+}
+@font-face {
+  font-family: 'iconfont';  /* project id 634760 */
+  src: url('//at.alicdn.com/t/font_634760_300ed826qfl.eot');
+  src: url('//at.alicdn.com/t/font_634760_300ed826qfl.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_634760_300ed826qfl.woff') format('woff'),
+  url('//at.alicdn.com/t/font_634760_300ed826qfl.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_634760_300ed826qfl.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family: "iconfont"!important;
+  font-size: 34rpx;
+  font-style: normal;
+  -webkit-font-smooothing: antialiased;
+  -moz-osx-font-smooothing: grayscale;
+}

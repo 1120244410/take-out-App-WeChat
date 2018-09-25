@@ -1,0 +1,34 @@
+<!--pages/products/products.wxml-->
+<view class='notice' style='{{show?"":"display:none"}}'>
+  <text>您还没有登录哟</text>
+  <navigator url="/pages/login/login">登录</navigator>
+</view>
+<view class="order-info" wx:for="{{orderlist}}" wx:key="{{item.id}}">
+  <view class="bg-bar" style='background-image:url(/pages/public/bg-bar.png)'>
+    <view class="top">
+      <text>已结单</text>
+      <navigator>
+        <text>来自</text>
+        <text class='storename'>梅森凯瑟</text>
+      </navigator>
+    </view>
+    <view class="left">
+      <image src='http://localhost:3000{{item.thumb}}' />
+      <text>☆☆☆☆☆</text>
+      <text>再来一单</text>
+    </view>
+    <view class="right">
+      <text>{{item.pname}} {{item.num}}个</text>
+      <text>备注：送到请打18435204372</text>
+      <view>
+        <text class="iconfont icon-shijian-tianchong"> {{item.times}}</text>
+        <text class="iconfont icon-icon_sent"> {{address[0].detail}}</text>
+      </view>
+      <text class="price">¥{{item.totals}}</text>
+    </view>
+    <view class="arrow">
+      <text class="iconfont icon-youjiantou1"></text>
+    </view>
+    <view class="biao-g" style='background-image:url(/pages/public/sent-g.png)'></view>
+  </view>
+</view>

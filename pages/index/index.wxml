@@ -1,0 +1,96 @@
+<!--index.wxml-->
+<view>
+  <view class='head'>
+    <view class="h-l">
+      <text class="iconfont icon-location"></text>
+      <navigator style="font-size: 30rpx;" url="#">太原</navigator>
+      <image src='../public/arrow-down.png' />
+    </view>
+    <view class="h-r">
+      <input type="text" placeholder="法式马卡龙"></input>
+      <navigator class="iconfont icon-sousuo"></navigator>
+    </view>
+  </view>
+  <swiper class='banner' indicator-dots="{{indicatorDots}}" circular="{{isloop}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="355" height="150" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='fenlei'>
+    <view wx:for="{{ptype}}" wx:key="{{index}}" class="li">
+      <navigator url="/pages/store/store?sid={{item.type}}">
+        <image src="http://localhost:3000/images/index/fenlei/mainType{{index+1}}.png" />
+      </navigator>
+      <text class='mingchen'>{{item.type}}</text>
+    </view>
+  </view>
+  <view class="youxuan">
+    <!-- 优选 -->
+    <view class='title-cover'>
+      <view class="title">
+        <text>为你优选</text>
+        <image src="./img/youxuan/shenglue.png" alt="" />
+      </view>
+      <navigator href="#" class="title more">查看更多</navigator>
+    </view>
+    <view class="list-content">
+      <view class='product-list' wx:for="{{plist}}" wx:key="{{plist.id}}">
+        <text class='price'>¥{{item.price}}</text>
+        <view class="detail">
+          <navigator class="pthumb" url='/pages/products/products?pid={{item.id}}'>
+            <image src="http://localhost:3000/{{item.thumb}}" alt="" />
+          </navigator>
+          <view class="detail-bottom">
+            <navigator href="">
+              <image src="./img/youxuan/meishenkaise.png" alt="" />
+            </navigator>
+            <view class="other-info">
+              <navigator href="#" class="collection">{{item.collection}}收藏</navigator>
+              <navigator href="#" class="collection"> {{item.browse}}浏览</navigator>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <navigator class='huan'>
+      <icon class="iconfont icon-huanyihuan"></icon>
+      <text>换一换</text>
+    </navigator>
+  </view>
+  <view class="youxuan">
+    <!-- 推荐 -->
+    <view class='title-cover'>
+      <view class="title">
+        <text>今日推荐</text>
+        <image src="./img/youxuan/shenglue.png" alt="" />
+      </view>
+      <navigator href="#" class="title more">查看更多</navigator>
+    </view>
+    <view class="list-content">
+      <view class='product-list' wx:for="{{plist}}" wx:key="{{plist.id}}">
+        <text class='price'>¥{{item.price}}</text>
+        <view class="detail">
+          <navigator class="pthumb" href="">
+            <image src="http://localhost:3000/{{item.thumb}}" alt="" />
+          </navigator>
+          <view class="detail-bottom">
+            <navigator href="">
+              <image src="./img/youxuan/meishenkaise.png" alt="" />
+            </navigator>
+            <view class="other-info">
+              <navigator href="#" class="collection">{{item.collection}}收藏</navigator>
+              <navigator href="#" class="collection"> {{item.browse}}浏览</navigator>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <navigator class='huan'>
+      <icon class="iconfont icon-huanyihuan"></icon>
+      <text>换一换</text>
+    </navigator>
+  </view>
+  <view class="up-fresh">上拉显示更多</view>
+</view>

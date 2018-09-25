@@ -1,0 +1,16 @@
+<!--pages/address/address.wxml-->
+<view class="main">
+  <view wx:for="{{address}}" class="list" wx:key="item.id">
+    <view class="detail">
+      <text class="name">{{item.realname}} {{item.tel}}</text>
+      <view class="address">
+        <view class="default" style="{{item.state?'display:block':'display:none'}}">默认</view>
+        <text>{{item.detail}}</text>
+      </view>
+    </view>
+    <view class="operation iconfont icon-icon-" bindtap='operation'></view>
+  </view>
+</view>
+<footer>
+  <navigator url="/updateAddress?id=0">新增收货地址</navigator>
+</footer>

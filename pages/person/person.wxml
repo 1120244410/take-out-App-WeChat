@@ -1,0 +1,79 @@
+<!-- person.html -->
+<view class='head'>
+  <view class='bg' style='background:url(http://localhost:3000/images/my-bg.png)'>
+    <view class="my-panel">
+    <view class='my-info'>
+      <image src='http://localhost:3000{{userinfo.headpic}}'></image>
+      <view class='detail'>
+        <view class="layer">
+          <text>{{userinfo.nickname}} ♂</text>
+          <text class="iconfont icon-icon-" bindtap='isLogin'></text>
+        </view>
+        <view class='layer buttom'>
+          <text style="color:#ecc12b">{{userinfo.level}}级吃货</text>
+        </view>
+      </view>
+    </view>
+    <view class='my-money'><navigator>余额 {{userinfo.money}}</navigator></view>
+    <view class='my-check'>礼券 {{userinfo.vouchers}}个</view>
+  </view>
+  </view>
+</view>
+<view class='options'>
+  <navigator class='list' url='/pages/shopcar/shopcar'>
+    <view>
+      <text class='iconfont icon-dingdan'></text>
+      <text>我的购物车</text>
+    </view>
+    <text class='iconfont icon-youjiantou1'></text>
+  </navigator>
+  <navigator class='list' url="/pages/address/address">
+    <view>
+      <text class='iconfont icon-dingwei'></text>
+      <text>收货地址</text>
+    </view>
+    <text class='iconfont icon-youjiantou1'></text>
+  </navigator>
+  <navigator class='list'>
+    <view>
+      <text class='iconfont icon-collection-b'></text>
+      <text>我的收藏</text>
+    </view>
+    <text class='iconfont icon-youjiantou1'></text>
+  </navigator>
+  <navigator class='list'>
+    <view>
+      <text class='iconfont icon-youhuiquan'></text>
+      <text>礼券中心</text>
+    </view>
+    <text class='iconfont icon-youjiantou1'></text>
+  </navigator>
+  <navigator class='list'>
+    <view>
+      <text class='iconfont icon-pingjia-'></text>
+      <text>我的评价</text>
+    </view>
+    <text class='iconfont icon-youjiantou1'></text>
+  </navigator>
+  <navigator class='list'>
+    <view>
+      <text class='iconfont icon-kefu-tianchong'></text>
+      <text>客户服务</text>
+    </view>
+    <text class='iconfont icon-youjiantou1'></text>
+  </navigator>
+  <navigator class='list'>
+    <view>
+      <text class='iconfont icon-hezuo-tianchong'></text>
+      <text>招商加盟</text>
+    </view>
+    <text class='iconfont icon-youjiantou1'></text>
+  </navigator>
+  <navigator class='list'>
+    <view>
+      <text class='iconfont icon-icon_sent'></text>
+      <text>更多内容</text>
+    </view>
+    <text class='iconfont icon-youjiantou1'></text>
+  </navigator>
+</view>

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "个人设置",
+  "navigationBarBackgroundColor": "#ec472b",
+  "navigationBarTextStyle": "white",
+  "onReachBottomDistance": 200,
+  "backgroundTextStyle": "dark"
+}

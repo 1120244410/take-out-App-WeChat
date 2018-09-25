@@ -1,0 +1,35 @@
+/* pages/option/option.wxss */
+.list{
+    width:100%;
+    padding:24rpx;
+    box-sizing: border-box;
+}
+.list navigator{
+    width: 100%;
+    height:120rpx;
+    font-size: 28rpx;
+    color:#333;
+    display: flex;
+    align-items: center;
+    border-bottom: 1rpx solid rgba(0,0,0,0.3);
+    box-sizing: border-box;
+}
+.list navigator text{
+    color:rgba(0,0,0,0.4);
+}
+.telChange,.nickname{
+    justify-content: space-between;
+}
+.logout{
+    display: flex;
+    width:100%;
+    height:100rpx;
+    background: #ec472b;
+    font-size: 34rpx;
+    color:#fff;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left:0;
+}

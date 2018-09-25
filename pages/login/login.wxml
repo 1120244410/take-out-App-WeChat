@@ -1,0 +1,27 @@
+<!--pages/login/login.wxml-->
+ <view class="all">
+            <form class="panel"  bindsubmit="formSubmit" bindreset="formReset">
+                <view class="itme">
+                    <text class="iconfont icon-geren"></text>
+                    <input name="username" type="text" placeholder="请输入手机号"/>
+                </view>
+                <view class="itme">
+                    <text class="iconfont icon-mima"></text>
+                    <input name="password" type="password" placeholder="请输入密码"/>
+                </view>
+                <view class="itme msg">
+                    <view class="find-back" style="[show?'display:block':'']">{{msg}}</view>
+                    <navigator class="find-back">找回密码</navigator>
+                </view>
+                <button class="button" formType="submit">登录</button>
+            </form>
+            <view class="other-login">其他登录方式</view>
+            <view class="icon-three">
+                <text class="iconfont icon-weixin"></text>
+                <text class="iconfont icon-QQ"></text>
+                <text class="iconfont icon-weibo"></text>
+            </view>
+            <view class="info">
+                我已阅读并同意UP用户协议<text class="iconfont icon-xuanze"></text>
+            </view>
+        </view>

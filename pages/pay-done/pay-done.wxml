@@ -1,0 +1,25 @@
+<!--pages/pay-done/pay-done.wxml-->
+<view class="main">
+  <image src="http://localhost:3000/images/coin.png" alt="" />
+  <view class="success">下单成功了</view>
+  <view class="spend">- 实付款
+    <b>{{total}}</b> -</view>
+  <view class="btn">
+    <navigator open-type='switchTab' url="/pages/index/index">返回首页</navigator>
+    <navigator open-type='switchTab' url="/pages/order/order">查看订单</navigator>
+  </view>
+</view>
+<view class="guess">
+  <view class="title">
+    <text style="color:red;">-</text> 猜你还喜欢</view>
+  <navigator url="/pages/products/products?id=2" class="list">
+    <view class="left">
+      <image src="http://localhost:3000{{guess.thumb}}" alt="" />
+    </view>
+    <view class="right">
+      <span>{{guess.pname}}</span>
+      <p>{{guess.description}}</p>
+      <p style="color:red">￥{{guess.price}}</p>
+    </view>
+  </navigator>
+</view>

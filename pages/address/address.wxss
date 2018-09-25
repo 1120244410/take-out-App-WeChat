@@ -1,0 +1,82 @@
+/* pages/address/address.wxss */
+
+.icon-icon-:before {
+  font-size: 48rpx;
+  content: "\e624";
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.main {
+  padding: 24rpx;
+}
+
+.main .list {
+  padding: 0 20rpx 20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1rpx solid rgba(0, 0, 0, 0.3);
+}
+
+.main .list .detail {
+  height: 100%;
+  width: 80%;
+}
+
+.main .list .detail .name {
+  color: #333;
+  font-size: 28rpx;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+}
+
+.main .list .detail .address {
+  color: #333;
+  font-size: 28rpx;
+  display: flex;
+  align-items: center;
+}
+
+.main .list .detail .address view {
+  margin-right: 10rpx;
+}
+
+.main .list .detail .address .default {
+  color: #ec472b;
+  border: 1rpx solid #ec472b;
+  text-align: center;
+  line-height: 24rpx;
+  padding: 10rpx;
+}
+
+.main .list .detail .address .tag {
+  color: #ec472b;
+  border: 1rpx solid #ec472b;
+  text-align: center;
+  line-height: 24rpx;
+  padding: 10rpx;
+}
+
+.operation {
+  font-size: 40rpx;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  width: 100%;
+  height: 90rpx;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background: #ec472b;
+  font-size: 34rpx;
+}
+
+footer navigator {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

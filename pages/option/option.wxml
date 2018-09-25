@@ -1,0 +1,14 @@
+<!--pages/option/option.wxml-->
+<view class="list">
+  <navigator class="nickname">
+    <text>修改昵称</text>
+    <text>{{userInfo.nickname}}</text>
+  </navigator>
+  <navigator class="telChange">
+    <text>改变绑定手机号</text>
+    <text>{{userInfo.username}}</text>
+  </navigator>
+  <navigator class="passChange">密码修改</navigator>
+  <navigator class="notice">消息设置</navigator>
+</view>
+<view class="logout" bindtap='clearUid'>退出登录</view>

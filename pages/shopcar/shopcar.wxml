@@ -1,0 +1,36 @@
+<!--pages/shopcar/shopcar.wxml-->
+          <view class="main">
+            <view class="nothing" style='{{show?"display:block":"display:none"}}'>这里空空如也</view>
+            <view class="list" wx:for="{{listContent}}" wx:key="{{item.id}}">
+                <view class="title">
+                  <view>梅森凯瑟</view>
+                  <text class="iconfont icon-shanchu" bindtap='del' data-id='{{item.id}}'></text>
+                </view>
+                <view class="info">
+                    <view class="check-box {{item.checkstate==1?'checked':''}}" bindtap='count' data-pid="{{item.pid}}" data-id="{{item.id}}"></view>
+                    <navigator>
+                      <image src='http://localhost:3000{{item.thumb}}' />
+                    </navigator>
+                      <view class="desc">
+                        <text>{{item.pname}}</text>
+                        <text class="price">单价：￥{{item.price}}</text>
+                        <view class="right">
+                          <text bindtap='decrease' data-id='{{item.id}}' data-num='{{item.num}}' data-p='{{item.price}}'>-</text>
+                          <text class="num">{{item.num}}</text>
+                          <text bindtap='add' data-id='{{item.id}}' data-num='{{item.num}}' data-p='{{item.price}}'>+</text>
+                        </view>
+                      </view>
+                    
+                </view>
+            </view>
+        </view>
+        <footer>
+            <view class="left" bindtap='checkedAll'>
+                <text class="iconfont {{check==1?'icon-xuanze-checked':'icon-xuanze'}}"></text>
+                <text>：全选</text>
+            </view>
+            <view class="right">
+                <view class="count">合计:￥{{total}}</view>
+                <view class="jump" bindtap='isZero'>结算</view>
+            </view>
+        </footer>

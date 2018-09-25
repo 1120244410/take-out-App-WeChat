@@ -1,0 +1,70 @@
+<!--pages/sub-order/sub-order.wxml-->
+<view class='head'>
+  <navigator wx:for="{{address}}" url="{{'/pages/address/address?id='+item.id}}" wx:key="{{item.id}}">
+    <text>订单配送至:</text>
+    <view>
+      <text>{{item.detail}}</text>
+      <text class="iconfont icon-youjiantou1"></text>
+    </view>
+    <text>{{item.realname}} {{item.tel}}</text>
+  </navigator>
+</view>
+<view class="detail">
+  <view class='bord'>
+    <view>
+      <text>送达时间</text>
+      <text class="orange">预计30分钟</text>
+    </view>
+    <navigator  to="/payWay" class="show-payWay">
+      <text>支付方式</text>
+      <view class="orange">
+        <text>{{payway}}</text>
+        <text class="iconfont icon-youjiantou1"></text>
+      </view>
+    </navigator>
+  </view>
+  <view class='bord'>
+    <view>
+      <text>梅森凯瑟</text>
+      <text>店铺</text>
+    </view>
+    <view wx:for="{{listContent}}" class="every" wx:key="{{item.id}}">
+        <image src="http://localhost:3000{{item.thumb}}" alt=""/>
+        <view class="info">
+          <text class="name">{{item.pname}}</text>
+          <text class="price">¥{{item.price}}</text>
+          <text class="count">数量{{item.num}}</text>
+        </view>
+    </view>
+    <navigator href="#" class="hongbao">
+      <text>红包</text>
+      <view class="orange">
+        <text>无可用红包</text>
+        <text class="iconfont icon-youjiantou1"></text>
+      </view>
+    </navigator>
+    <navigator href="#">
+      <text>总计</text>
+      <text class="orange">¥{{total}}</text>
+    </navigator>
+  </view>
+  <view class='bord'>
+    <view>
+      <text>订餐备注</text>
+      <text class="prey">无</text>
+    </view>
+    <navigator href="#">
+      <text>餐具份数</text>
+      <view class="prey">
+        <text>未选择</text>
+        <text class="iconfont icon-youjiantou1"></text>
+      </view>
+    </navigator>
+  </view>
+</view>
+<view class="blank"></view>
+<!--底部-->
+<view class="bottom-bar">
+  <text>总金额：￥{{total}}</text>
+  <text class="jiesuan" bindtap='creatOrder'>立即支付</text>
+</view>

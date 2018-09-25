@@ -1,0 +1,44 @@
+<!--pages/store/store.wxml-->
+<view class="main">
+  <view class="slideCover">
+    <view class="slideType">
+      <view wx:for="{{ptype}}" wx:key="{{item.id}}"  bindtap='changePoint' data-stype="{{item.type}}">
+        <text>{{item.type}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="filter">
+    <view bindtap='getPointStore'>
+      <text class='filter-title'>综合</text>
+      <text class='iconfont icon-xiajiantou'></text>
+    </view>
+    <view bindtap='hotSort'>
+      <text class='filter-title'>热度</text>
+      <text class='iconfont icon-xiajiantou'></text>
+    </view>
+    <view bindtap='priceSort'>
+      <text class='filter-title'>起送价</text>
+      <text class='iconfont icon-xiajiantou'></text>
+    </view>
+    <view href="javascript:">
+      <text class='filter-title'>筛选</text>
+      <text class='iconfont icon-xiajiantou'></text>
+    </view>
+  </view>
+            <view class="list">
+                <view wx:for="{{plist}}" class="storeInfo" wx:key="{{item.id}}">
+                    <view class="left">
+                        <image src="http://localhost:3000/{{item.logo}}"/>
+                    </view>
+                    <view class="right">
+                        <view class="storeName">{{item.storeName}}</view>
+                        <text class="description">{{item.description}}</text>
+                        <view class="collection" style="color: #ecaa2b">
+                            <text>热度：{{item.hot}}</text>
+                            <text class="segmentation">|</text>
+                            <text>起送：￥{{item.startprice}}</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+</view>

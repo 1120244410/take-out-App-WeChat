@@ -1,0 +1,94 @@
+/* pages/pay-done/pay-done.wxss */
+
+.main {
+  width: 100%;
+  padding: 24rpx 24rpx 40rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.main image{
+  margin-top: 40rpx;
+  width: 250rpx;
+  height: 84rpx;
+}
+
+.main .success{
+  font-size: 40rpx;
+  font-weight: bolder;
+  margin-bottom: 20rpx;
+  color: rgba(236, 170, 43, 1);
+}
+
+.main .spend {
+  font-size: 28rpx;
+  margin-bottom: 40rpx;
+  color: red;
+}
+
+.main .btn {
+  width: 80%;
+  padding: 0 40rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main .btn navigator {
+  width: 140rpx;
+  height: 60rpx;
+  color: #fff;
+  font-size: 24rpx;
+  background: rgba(236, 170, 43, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30rpx;
+  box-sizing: border-box;
+}
+
+.guess {
+  padding: 40rpx 24rpx 24rpx;
+  border-top: 1rpx solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.guess .title {
+  font-size: 24rpx;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.guess .list {
+  width: 100%;
+  padding: 24rpx;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.guess .list .left {
+  width: 120rpx;
+  height: 120rpx;
+  overflow: hidden;
+  margin-right: 20rpx;
+}
+
+.guess .list .left image{
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.guess .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.guess .right span {
+  font-size: 30rpx;
+}
+
+.guess .right p {
+  font-size: 24rpx;
+}

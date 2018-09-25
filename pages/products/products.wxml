@@ -1,0 +1,85 @@
+<!--pages/products/products.wxml-->
+<view>
+        <view class="all-stuff">
+            <image src='http://localhost:3000{{pinfo.thumb}}' style="width:100%;margin-top: -1rem;" />
+            <view class='ul'>
+                <view class="l">
+                    <image src='' />
+                </view>
+                <view class="r">
+                    梅森凯瑟(太原店)欢迎光临!各式蛋糕、甜点满五十配送
+                </view>
+            </view>
+        </view>
+        <view class="d-info">
+            <view>
+                <text>{{pinfo.pname}}</text>
+                <text class="s-size">力荐</text>
+                <text class="s-size">独家</text>
+            </view>
+            <view>
+                <text>月销量：{{pinfo.sellnum}} 好评率：96%</text>
+            </view>
+            <view>
+                <view class="info-l">
+                    <view class="price">¥{{pinfo.price}}</view>
+                    <view class="chuxiao">满百减十、满六送一、多买多减</view>
+                </view>
+                <view bindtap='add' class="add">加入购物车</view>
+            </view>
+        </view>
+        <view class="s-hudong">
+            <view class="hudong">
+                <view>
+                    <text>描述</text>
+                </view>
+                <view>
+                    <text>{{pinfo.description}}</text>
+                </view>
+            </view>
+            <view class="hudong">
+                <view>
+                    <text>可选套餐</text>
+                </view>
+                <view>
+                    <text>两个糯米卷+一杯冰激凌=50</text>
+                   <navigator>前往</navigator>
+                </view>
+            </view>
+        </view>
+        <view class="pinglun">
+            <view>评价</view>
+            <view>
+               <navigator>
+                <text>295个评价</text>
+                <text class="iconfont icon-youjiantou1"></text>
+               </navigator>
+            </view>
+        </view>
+        <view class="someone">
+            <view>
+                <view></view>
+            </view>
+            <view>
+                <view>匿名用户</view>
+                <view>真的很好吃，一如既往地高质量！辛苦辛苦。</view>
+            </view>
+            <view>
+                <view class="time">2018.3.17</view>
+                <view class="itme">
+                    <text class="iconfont icon-pinglun"></text>
+                    <text></text>
+                    <text class="iconfont icon-zan"></text>
+                </view>
+            </view>
+        </view>
+        <view class="shangla">上拉显示更多</view>
+        <view class="bottom-bar">
+          <navigator class="buyCar" url='/pages/shopcar/shopcar'>
+            <text class="iconfont icon-gouwuche"></text>
+            <text class="count">{{count}}</text>
+            <text id="weiman">未满配送额</text>
+          </navigator>
+          <navigator url="/pages/shopcar/shopcar" class="jiesuan"><h4>立即购买</h4></navigator>
+        </view>
+</view>

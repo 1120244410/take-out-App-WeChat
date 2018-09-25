@@ -1,0 +1,300 @@
+/* pages/products/products.wxss */
+.all-stuff{
+	width: 100%;
+	height:413rpx;
+	position: relative;
+	overflow: hidden;
+  box-sizing: border-box;
+}
+.all-stuff > .ul{
+	width:100%;
+	height:88rpx;
+	color:white;
+	background-color: rgba(236,71,43,0.4);
+	display: flex;
+	align-items: flex-end;
+	padding:0 24rpx;
+	position: absolute;
+  left:0;
+  bottom: 0;
+}
+.all-stuff > .ul > .l{
+	width: 88rpx;
+	height: 88rpx;
+	margin-bottom: 36rpx;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.all-stuff > .ul > view > image{
+	height:88rpx;
+	display: block;
+}
+.all-stuff > .ul > .r{
+	width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+	font-size: 26rpx;
+	margin-left: 20rpx;
+}
+.d-info{
+	width:100%;
+	height:197rpx;
+	padding:36rpx 24rpx 0;
+  box-sizing: border-box;
+}
+.d-info > view:nth-child(1){
+	width:100%;
+	height:30rpx;
+	display: flex;
+	align-items: center;
+}
+.d-info > view > text{
+	font-size: 30rpx;
+	margin-right: 10rpx;
+}
+.d-info > view > .s-size{
+	width: 100rpx;
+	text-align: center;
+	border-radius: 30rpx;
+	background-color: #ecaa2b;
+	font-size: 26rpx;
+	color:white;
+}
+.d-info > view > .s-size:last-child{
+	border-radius: 30rpx;
+	background-color: #ec472b;
+	font-size: 26rpx;
+}
+.d-info > view:nth-child(2){
+	width:100%;
+	height:66rpx;
+	display: flex;
+	align-items: center;
+}
+.d-info > view:nth-child(2) > text{
+	color:rgba(0,0,0,0.4);
+	font-size: 24rpx;
+}
+.d-info > view:nth-child(3){
+	width:100%;
+	height:40rpx;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.d-info > view:nth-child(3) > .info-l{
+	display: flex;
+	align-items: center;
+}
+.d-info > view:nth-child(3) > .info-l > .price{
+	color:#ec2b2b;
+	font-size: 34rpx;
+	margin-right: 10rpx;
+}
+.d-info > view:nth-child(3) > .info-l > .chuxiao{
+	color:rgba(0,0,0,0.4);
+	font-size: 28rpx;
+}
+.d-info > view:nth-child(3) > .add{
+	width:160rpx;
+	height:60rpx;
+	color:white;
+	border-radius: 30rpx;
+	background-color: #ec472b;
+	font-size: 28rpx;
+	text-align: center;
+	line-height: 60rpx;
+}
+.s-hudong{
+	width:100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding:0 24rpx;
+  box-sizing: border-box;
+}
+.hudong{
+	width:100%;
+	height:120rpx;
+	border-radius: 60rpx;
+	background-color: #ecaa2b;
+	margin-bottom: 30rpx;
+	overflow: hidden;
+	border:1rpx solid #ecaa2b;
+	display: flex;
+	justify-content: space-between;
+}
+.hudong > view:nth-child(1){
+	width:18%;
+	color:white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.hudong > view:nth-child(1) > text {
+	font-size: 26rpx;
+	width:60%;
+}
+.hudong > view:nth-child(2){
+	width:88%;
+	font-size: 26rpx;
+	color:#333;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	padding: 0 60rpx 0 25rpx;
+}
+.hudong:nth-child(2) > view:nth-child(2){
+	display: flex;
+	justify-content: space-between;
+}
+.hudong:nth-child(2) > view:nth-child(2) > navigator{
+  padding:6rpx 10rpx;
+	color:white;
+	background-color: #ec472b;
+	border-radius: 50rpx;
+  font-size: 26rpx;
+}
+.pinglun{
+	width: 100%;
+	margin-top: 30rpx;
+	padding:10rpx 24rpx;
+	border-bottom:1rpx solid rgba(0,0,0,0.2);
+	display: flex;
+	justify-content: space-between;
+  box-sizing: border-box;
+}
+.pinglun > view{
+	font-size: 24rpx;
+	color:#ec472b;
+}
+.pinglun > view > navigator{
+	font-size: 30rpx;
+	color:#ec472b;
+}
+.someone{
+	width:100%;
+	height:310rpx;
+	padding:16rpx 24rpx;
+	border-bottom:1rpx solid rgba(0,0,0,0.2);
+	display: flex;
+	justify-content: space-between;
+}
+.someone > view:nth-child(1){
+	width:76rpx;
+	height:100%;
+}
+.someone > view:nth-child(1) > view{
+	width:76rpx;
+	height: 76rpx;
+	background-size: cover;
+}
+.someone > view:nth-child(2){
+	width:100%;
+	height:100%;
+	padding:0 30rpx 0;
+}
+.someone > view:nth-child(2) > view:first-child{
+	margin-bottom: 20rpx;
+	font-size: 26rpx;
+	color:#333;
+}
+.someone > view:nth-child(2) > view:last-child{
+	font-size: 24rpx;
+	color:#333;
+}
+.someone > view:nth-child(3){
+	width:117rpx;
+	height:100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.someone > view:nth-child(3) > .time{
+	font-size: 22rpx;
+	color:rgba(0,0,0,0.4);
+}
+.someone > view:nth-child(3) > .itme{
+	color:#ec472b;
+	display: flex;
+	justify-content: flex-end;
+}
+.someone > view:nth-child(3) > .itme > text{
+	margin-left: 20rpx;
+	font-size: 30rpx;
+}
+.shangla{
+	width:100%;
+	height:178rpx;
+	font-size: 24rpx;
+	color: rgba(0,0,0,0.4);
+	background-color: white;
+	text-align: center;
+	line-height: 80rpx;
+}
+
+    .bottom-bar{
+        width:100%;
+        height:98rpx;
+        background-color: #ec472b;
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        font-size: 20rpx;
+        color: white;
+        z-index: 2;
+    }
+    .bottom-bar>.jiesuan{
+        width: 200rpx;
+        height: 98rpx;
+        color:white;
+        background-color: #ecaa2b;
+        font-size: 34rpx;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bottom-bar>.buyCar{
+        width: 120rpx;
+        height: 120rpx;
+        color:white;
+        background-color: #ecaa2b;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4rpx 4rpx #e31709;
+        margin-left: 24rpx;
+        position: relative;
+        bottom: 20rpx;
+    }
+    .bottom-bar>.buyCar>.iconfont{
+        font-size: 60rpx;
+    }
+    .count{
+        width:40rpx;
+        height:40rpx;
+        border-radius: 50%;
+        background-color: #ec2b2b;
+        position: absolute;
+        left: 96rpx;
+        top:76rpx;
+        font-size: 20rpx;
+        line-height: 40rpx;
+        text-align: center;
+    }
+    #weiman{
+        width:100%;
+        height:20rpx;
+        position: absolute;
+        left: 150rpx;
+        top:85rpx;
+        font-size: 20rpx;
+    }
+    .icon-gouwuche:before{
+      content:'\e611';
+      color:#fff;
+    }
